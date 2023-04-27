@@ -4,10 +4,10 @@ import Article from "./components/Article.vue";
 import Search from "./components/Search.vue";
 import { useDefaultStore } from "./stores/defaultStore";
 
-const tags = articles.map(article => article.tags).flat();
+const tags = articles.flatMap(article => article.tags);
 const filteredTags = [... new Set(tags)];
 
-const places = articles.map(article => article.places).filter(p => p).flat();
+const places = articles.flatMap(article => article.places).filter(p => p);
 const filteredPlaces = [... new Set(places)];
 
 const store = useDefaultStore();
@@ -18,8 +18,7 @@ store.$patch({
   places: filteredPlaces,
 })
 
-store.$subscribe((_, state) => {
-  console.log(state.selectedPlace, state.selectedTag)
+store.$subscribe(() => {
   store.filterArticles()
 })
 

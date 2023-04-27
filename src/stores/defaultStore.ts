@@ -5,48 +5,36 @@ import { Article } from "../components/Article.vue";
 export const useDefaultStore = defineStore("articles", () => {
   const articles = ref([] as Article[]);
   const tags = ref([] as string[]);
+
+  const filters = ref({tags: [] as string[], places: [] as string[]});
   const places = ref([] as string[]);
   const filteredArticles = ref([] as Article[]);
-  const selectedTag = ref("ALL");
-  const selectedPlace = ref("ALL");
 
   function filterArticles() {
-    if (selectedTag.value === "ALL" && selectedPlace.value === "ALL") {
-      filteredArticles.value = articles.value;
-    } else {
-      if (selectedTag.value != "ALL" && selectedPlace.value === "ALL") {
-        filteredArticles.value = articles.value.filter((article) =>
-          article.tags.includes(selectedTag.value)
-        );
-      } else if (selectedTag.value === "ALL" && selectedPlace.value != "ALL") {
-        filteredArticles.value = articles.value.filter((article) =>
-          article.places?.includes(selectedPlace.value)
-        );
-      } else {
-        filteredArticles.value = articles.value.filter((article) =>
-          (article.places?.includes(selectedPlace.value) && article.tags.includes(selectedTag.value))
-        );
+    let a = [];
+    if (filters.value.tags.length) {
+      let _a = [];
+      for (const tag of filters.value.tags) {
+        _a.push(articles.value.filter(article => article.tags?.includes(tag)))
       }
+      a.push(_a.flat());
     }
+    if (filters.value.places.length) {
+      let _b = [];
+      for (const place of filters.value.places) {
+        _b.push(articles.value.filter(article => article.places?.includes(place)))
+      }
+      a.push(_b.flat());
+    }
+    filteredArticles.value = a.flat().length ? a.flat() : articles.value;
   }
-
-  // function filterArticlesByPlace() {
-  // if (selectedPlace.value === "ALL") {
-  // 	filteredArticles.value = articles.value;
-  //   } else {
-  // 	filteredArticles.value = articles.value.filter((article) =>
-  // 	  article.places.includes(selectedPlace.value)
-  // 	);
-  //   }
-  // }
 
   return {
     articles,
     filteredArticles,
     tags,
     places,
-    selectedTag,
-    selectedPlace,
+    filters,
     filterArticles,
   };
 });
