@@ -29,7 +29,14 @@ export const useDefaultStore = defineStore("articles", () => {
       }
       a.push(_b.flat());
     }
-    filteredArticles.value = a.flat().length ? a.flat() : articles.value;
+
+    const sortedArticles = a.flat().length
+      ? [...new Set(a.flat())]
+      : articles.value;
+    filteredArticles.value = sortedArticles.sort(
+      (b, a) =>
+        new Date(a.published_at).getTime() - new Date(b.published_at).getTime()
+    );
   }
 
   return {
