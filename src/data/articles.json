@@ -81,7 +81,7 @@
 	  "related_place_slugs": ["australia"]
 	},
 	{
-	  "title": "🌍 Help me LP! How do I explore the US by Amtrak?",
+	  "title": "Help me LP! How do I explore the US by Amtrak?",
 	  "excerpt": "If you’re considering exploring the USA by train, Lauren Keith has the answers to all your Amtrak questions.\r\n",
 	  "tags": [
 		"sustainable-travel",
@@ -588,7 +588,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/five-expert-tips-for-getting-started-in-travel-writing",
 	  "published_at": "2013-08-09T10:18:14Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -600,7 +600,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/essential-travel-tech-for-work-trips",
 	  "published_at": "2013-11-18T14:49:42Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -672,7 +672,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/top-5-photogenic-destinations",
 	  "published_at": "2012-04-04T02:25:28Z",
-	  "places": ["Asia", "North America", "Europe", "WORLD"],
+	  "places": ["Asia", "North America", "Europe", "World"],
 	  "related_place_slugs": ["asia", "north-america", "europe", "world"]
 	},
 	{
@@ -684,7 +684,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/the-worlds-iciest-surf-spots",
 	  "published_at": "2012-04-17T06:33:41Z",
-	  "places": ["North America", "Europe", "WORLD"],
+	  "places": ["North America", "Europe", "World"],
 	  "related_place_slugs": ["north-america", "europe", "world"]
 	},
 	{
@@ -696,7 +696,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/return-trip-going-back-for-seconds",
 	  "published_at": "2012-05-02T07:21:37Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -747,7 +747,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/the-moon-where-dreams-and-endeavours-collide",
 	  "published_at": "2009-07-20T02:50:45Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -759,7 +759,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/take-cover-lonely-planets-guide-to-travel-insurance",
 	  "published_at": "2013-08-01T12:45:03Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -771,7 +771,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/eight-common-travel-tech-disasters",
 	  "published_at": "2012-09-26T11:27:34Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -783,7 +783,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/how-to-get-off-the-beaten-track-anywhere",
 	  "published_at": "2014-09-09T12:05:30Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -794,7 +794,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/how-to-stay-in-an-igloo-and-live-to-tell-about-it",
 	  "published_at": "2013-02-05T20:03:29Z",
-	  "places": ["Switzerland", "WORLD", "Austria"],
+	  "places": ["Switzerland", "World", "Austria"],
 	  "related_place_slugs": ["switzerland", "world", "austria"]
 	},
 	{
@@ -806,7 +806,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/tips-for-travel-with-an-ipad-and-other-tablets",
 	  "published_at": "2012-09-04T10:10:37Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -834,7 +834,7 @@
 		"North America",
 		"Europe",
 		"Australia & Pacific",
-		"WORLD"
+		"World"
 	  ],
 	  "related_place_slugs": ["north-america", "europe", "pacific", "world"]
 	},
@@ -847,7 +847,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/top-5-tips-for-budding-photographers",
 	  "published_at": "2010-12-20T11:57:56Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -890,7 +890,7 @@
 		"Europe",
 		"North America",
 		"Africa",
-		"WORLD"
+		"World"
 	  ],
 	  "related_place_slugs": [
 		"new-zealand",
@@ -914,7 +914,7 @@
 	  "places": [
 		"Asia",
 		"Europe",
-		"WORLD",
+		"World",
 		"South America",
 		"North America"
 	  ],
@@ -957,7 +957,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/have-you-been-to-laptopistan",
 	  "published_at": "2010-12-06T14:52:46Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -993,7 +993,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/photography-tips-interiors",
 	  "published_at": "2010-11-27T00:59:22Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -1039,7 +1039,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/photography-tips-for-all-occasions",
 	  "published_at": "2010-10-22T04:03:12Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -1051,7 +1051,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/photography-tips-for-specific-conditions",
 	  "published_at": "2010-10-22T02:11:22Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -1063,7 +1063,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/photography-tips-how-to-share-your-travel-photos-videos",
 	  "published_at": "2010-10-04T11:05:05Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -1075,7 +1075,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/the-stuff-of-travel-writers-nightmares",
 	  "published_at": "2014-02-27T16:05:59Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -1088,7 +1088,7 @@
 	  "url": "https://www.lonelyplanet.com/articles/best-powder-in-the-world",
 	  "published_at": "2013-10-23T13:42:34Z",
 	  "places": [
-		"WORLD",
+		"World",
 		"North America",
 		"Asia",
 		"Europe",
@@ -1131,7 +1131,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/the-etiquette-of-photographing-strangers",
 	  "published_at": "2012-05-16T13:17:13Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -1143,7 +1143,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/travel-photography-beginners-guide-to-using-digital-slrs",
 	  "published_at": "2012-05-10T12:11:06Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -1155,7 +1155,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/urban-photography-itinerary",
 	  "published_at": "2012-05-10T12:06:20Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -1167,7 +1167,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/the-language-of-photography-and-how-it-can-help-you-take-better-pictures",
 	  "published_at": "2012-05-10T12:23:25Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -1240,7 +1240,7 @@
 		"Asia",
 		"North America",
 		"Europe",
-		"WORLD"
+		"World"
 	  ],
 	  "related_place_slugs": [
 		"pacific",
@@ -1265,7 +1265,7 @@
 		"Iceland",
 		"Canada",
 		"North America",
-		"WORLD"
+		"World"
 	  ],
 	  "related_place_slugs": [
 		"switzerland",
@@ -1291,7 +1291,7 @@
 		"Asia",
 		"Europe",
 		"Australia & Pacific",
-		"WORLD"
+		"World"
 	  ],
 	  "related_place_slugs": [
 		"north-america",
@@ -1311,7 +1311,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/get-your-skates-on-holiday-season-ice-skating",
 	  "published_at": "2012-12-04T04:36:26Z",
-	  "places": ["WORLD", "North America", "Europe"],
+	  "places": ["World", "North America", "Europe"],
 	  "related_place_slugs": ["world", "north-america", "europe"]
 	},
 	{
@@ -1323,7 +1323,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/most-wanted-travel-gadgets",
 	  "published_at": "2012-11-14T12:19:21Z",
-	  "places": ["WORLD"],
+	  "places": ["World"],
 	  "related_place_slugs": ["world"]
 	},
 	{
@@ -1335,7 +1335,7 @@
 	  "type": "Feature",
 	  "url": "https://www.lonelyplanet.com/articles/best-places-to-shop-for-travel-gear-and-gadgets",
 	  "published_at": "2012-11-26T11:19:04Z",
-	  "places": ["Asia", "North America", "WORLD"],
+	  "places": ["Asia", "North America", "World"],
 	  "related_place_slugs": ["asia", "north-america", "world"]
 	},
 	{
@@ -1375,7 +1375,7 @@
 		"Europe",
 		"North America",
 		"Asia",
-		"WORLD",
+		"World",
 		"Central America"
 	  ],
 	  "related_place_slugs": [

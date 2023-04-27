@@ -40,7 +40,7 @@ const removeFilter = (filter: Filter) => {
 				<option v-for="place in store.places" :value="place">{{ place }}</option>
 			</select>
 		</div>
-		<div class="search_filters">
+		<div class="search_filters" v-if="store.filters.tags.length || store.filters.places.length">
 			<div class="filter_item" v-for="tag in store.filters.tags" @click="removeFilter({ type: 'tags', value: tag })">
 				{{ tag }}
 			</div>
@@ -49,9 +49,6 @@ const removeFilter = (filter: Filter) => {
 				{{ place }}
 			</div>
 		</div>
-		<!--
-		date
-		type -->
 	</div>
 </template>
 

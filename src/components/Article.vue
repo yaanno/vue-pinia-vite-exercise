@@ -36,8 +36,12 @@ export interface Article {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 0.5rem;
 }
 .article__tag {
-  padding: 5px;
+  padding: 0 5px;
+  background: ghostwhite;
+  border-radius: 8px;
+  border: 1px solid lightgray;
 }
 </style>
