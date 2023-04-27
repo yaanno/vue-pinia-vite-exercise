@@ -23,6 +23,7 @@ export interface Article {
     </div>
     <div class="article_tags">
       <ArticleTag :tag="tag" v-for="tag in props.article.tags" />
+      <ArticleTag :tag="tag" v-for="tag in props.article.places" />
     </div>
   </div>
 </template>

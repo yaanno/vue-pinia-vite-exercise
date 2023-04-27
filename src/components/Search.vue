@@ -29,25 +29,24 @@ const removeFilter = (filter: Filter) => {
 <template>
 	<div class="search">
 		<div class="search_tags">
-			<select v-model="tagSelected" @change="addFilter({type: 'tags', value: tagSelected})">
-				<option value="ALL">Please select one</option>
+			<select v-model="tagSelected" @change="addFilter({ type: 'tags', value: tagSelected })">
+				<option disabled value="">Please select one</option>
 				<option v-for="tag in store.tags" :value="tag">{{ tag }}</option>
 			</select>
 		</div>
 		<div class="search_places">
-			<select v-model="placeSelected" @change="addFilter({type: 'places', value: placeSelected})">
-				<option value="ALL">Please select one</option>
+			<select v-model="placeSelected" @change="addFilter({ type: 'places', value: placeSelected })">
+				<option disabled value="">Please select one</option>
 				<option v-for="place in store.places" :value="place">{{ place }}</option>
 			</select>
 		</div>
 		<div class="search_filters">
-			<div class="filter_item" v-for="tag in store.filters.tags" @click="removeFilter({type: 'tags', value: tag})">
+			<div class="filter_item" v-for="tag in store.filters.tags" @click="removeFilter({ type: 'tags', value: tag })">
 				{{ tag }}
-				<i>x</i>
 			</div>
-			<div class="filter_item" v-for="place in store.filters.places" @click="removeFilter({type: 'places', value: place})">
+			<div class="filter_item" v-for="place in store.filters.places"
+				@click="removeFilter({ type: 'places', value: place })">
 				{{ place }}
-				<i>x</i>
 			</div>
 		</div>
 		<!--
@@ -65,15 +64,21 @@ const removeFilter = (filter: Filter) => {
 	border-top: 1px solid slategray;
 	border-bottom: 1px solid slategray;
 }
+
 .search_filters {
 	display: flex;
 	gap: 1rem;
-	
 }
+
 .filter_item {
 	background: lightgray;
 	padding: 0 0.5rem;
 	border-radius: 5px;
 	cursor: pointer;
 }
+
+.filter_item:hover {
+	text-decoration: line-through;
+}
+
 </style>
