@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ArticleTag from './ArticleTag.vue';
-const props = defineProps<{ article: Article }>();
+defineProps<{ article: Article }>();
 
 export interface Article {
   title: string;
@@ -15,15 +15,15 @@ export interface Article {
 <template>
   <div class="article">
     <div class="article_header">
-      <h2>{{ props.article.title }}</h2>
-      <p>{{ new Date(props.article.published_at).toLocaleDateString() }}</p>
+      <h2>{{ article.title }}</h2>
+      <p>{{ new Date(article.published_at).toLocaleDateString() }}</p>
     </div>
     <div class="article_content">
-      <p>{{ props.article.excerpt }}</p>
+      <p>{{ article.excerpt }}</p>
     </div>
     <div class="article_tags">
-      <ArticleTag :tag="tag" v-for="tag in props.article.tags" />
-      <ArticleTag :tag="tag" v-for="tag in props.article.places" />
+      <ArticleTag :tag="tagValue" type="tags" v-for="tagValue in article.tags" />
+      <ArticleTag :tag="placeValue" type="places" v-for="placeValue in article.places" />
     </div>
   </div>
 </template>
@@ -38,10 +38,5 @@ export interface Article {
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-.article__tag {
-  padding: 0 5px;
-  background: ghostwhite;
-  border-radius: 8px;
-  border: 1px solid lightgray;
-}
+
 </style>

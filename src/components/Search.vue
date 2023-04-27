@@ -7,7 +7,7 @@ const store = useDefaultStore();
 const tagSelected = ref('');
 const placeSelected = ref('');
 
-interface Filter {
+export interface Filter {
 	type: 'tags' | 'places';
 	value: string;
 }

@@ -30,7 +30,11 @@ store.$subscribe(() => {
 </script>
 
 <template>
-  <h1>Latest Articles</h1>
+  <h1>Latest Articles
+    <span class="article_count" v-if="store.filteredArticles.length">
+      ({{ store.filteredArticles.length }})
+    </span>
+  </h1>
   <Search />
   <div class="articles" v-if="store.filteredArticles.length">
     <Article v-for="article in store.filteredArticles" :article="article" :key="article.slug" />
@@ -38,6 +42,10 @@ store.$subscribe(() => {
 </template>
 
 <style>
+.article_count {
+  font-size: 50%;
+}
+
 .articles {
   display: flex;
   flex-direction: row;
