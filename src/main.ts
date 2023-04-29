@@ -1,10 +1,10 @@
 import { createApp } from "vue";
-import "./style.css";
-import App from "./App.vue";
 import { createPinia } from "pinia";
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
+import App from "./App.vue";
 import ArticlePage from "./views/ArticlePage.vue";
 import MainPage from "./views/MainPage.vue";
+import "./style.css";
 
 const pinia = createPinia();
 const router = createRouter({
@@ -12,7 +12,7 @@ const router = createRouter({
     { path: "/", component: MainPage },
     { path: "/:slug", component: ArticlePage },
   ],
-  history: createWebHashHistory(),
+  history: createWebHistory(),
 });
 
 createApp(App).use(router).use(pinia).mount("#app");
