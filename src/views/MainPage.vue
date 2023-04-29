@@ -8,11 +8,11 @@ const store = useDefaultStore();
 </script>
 
 <template>
-  <h1>Latest Articles
+  <h2>Latest Articles
     <span class="article_count" v-if="store.filteredArticles.length">
       ({{ store.filteredArticles.length }})
     </span>
-  </h1>
+  </h2>
   <Search />
   <div class="articles" v-if="store.filteredArticles.length">
     <Article v-for="article in store.filteredArticles" :article="article" :key="article.slug" />

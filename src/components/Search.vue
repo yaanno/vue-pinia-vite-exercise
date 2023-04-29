@@ -1,30 +1,31 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-import { useDefaultStore } from "../stores/defaultStore";
+import { ref } from 'vue'
+import { useDefaultStore } from '../stores/defaultStore'
 
-const store = useDefaultStore();
+const store = useDefaultStore()
 
-const tagSelected = ref('');
-const placeSelected = ref('');
+const tagSelected = ref('')
+const placeSelected = ref('')
 
 export interface Filter {
-	type: 'tags' | 'places';
-	value: string;
+	type: 'tags' | 'places'
+	value: string
 }
 
 const addFilter = (filter: Filter) => {
 	store.$patch(() => {
-		store.filters[filter.type].push(filter.value);
+		store.filters[filter.type].push(filter.value)
 	})
 }
 
 const removeFilter = (filter: Filter) => {
-	const filtered = store.filters[filter.type].filter(item => item != filter.value);
+	const filtered = store.filters[filter.type].filter(
+		(item) => item != filter.value
+	)
 	store.$patch(() => {
 		store.filters[filter.type] = filtered
 	})
 }
-
 </script>
 <template>
 	<div class="search">
@@ -37,7 +38,9 @@ const removeFilter = (filter: Filter) => {
 		<div class="search_places">
 			<select v-model="placeSelected" @change="addFilter({ type: 'places', value: placeSelected })">
 				<option disabled value="">Please select one</option>
-				<option v-for="place in store.places" :value="place">{{ place }}</option>
+				<option v-for="place in store.places" :value="place">
+					{{ place }}
+				</option>
 			</select>
 		</div>
 		<div class="search_filters" v-if="store.filters.tags.length || store.filters.places.length">
@@ -77,5 +80,4 @@ const removeFilter = (filter: Filter) => {
 .filter_item:hover {
 	text-decoration: line-through;
 }
-
 </style>

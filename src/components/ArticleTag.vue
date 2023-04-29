@@ -2,7 +2,12 @@
 import { useDefaultStore } from "../stores/defaultStore";
 import { Filter } from "./Search.vue";
 
-defineProps<{ tag: string, type: 'tags' | 'places' }>();
+export interface Tag {
+	value: string
+	type: 'tags' | 'places'
+}
+
+defineProps<{tag: Tag}>();
 
 const store = useDefaultStore();
 
@@ -15,7 +20,7 @@ const addFilter = (filter: Filter) => {
 </script>
 
 <template>
-	<span @click="() => addFilter({ type: type, value: tag })" class="article__tag">{{ tag }}</span>
+	<span @click="() => addFilter({ type: tag.type, value: tag.value })" class="article__tag">{{ tag.value }}</span>
 </template>
 
 <style>
