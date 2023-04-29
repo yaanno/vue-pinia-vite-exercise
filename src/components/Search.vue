@@ -56,7 +56,7 @@ const removeFilter = (filter: Filter) => {
 .search {
 	display: flex;
 	gap: 1rem;
-	margin: 0.5rem 0;
+	margin: 1.5rem 0;
 	padding: 1rem 0;
 	border-top: 1px solid slategray;
 	border-bottom: 1px solid slategray;

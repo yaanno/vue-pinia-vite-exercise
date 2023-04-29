@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import articles from "./data/articles.json";
-import Article from "./components/Article.vue";
-import Search from "./components/Search.vue";
 import { useDefaultStore } from "./stores/defaultStore";
-
 const sortedArticles = articles.sort(
   (a, b) =>
     new Date(a.published_at).getTime() -
@@ -28,28 +25,8 @@ store.$subscribe(() => {
 })
 
 </script>
-
 <template>
-  <h1>Latest Articles
-    <span class="article_count" v-if="store.filteredArticles.length">
-      ({{ store.filteredArticles.length }})
-    </span>
-  </h1>
-  <Search />
-  <div class="articles" v-if="store.filteredArticles.length">
-    <Article v-for="article in store.filteredArticles" :article="article" :key="article.slug" />
-  </div>
+  <!-- // Main header? -->
+  <router-view></router-view>
+  <!-- // Main footer? -->
 </template>
-
-<style>
-.article_count {
-  font-size: 50%;
-}
-
-.articles {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-</style>
