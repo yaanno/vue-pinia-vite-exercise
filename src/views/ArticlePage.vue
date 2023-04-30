@@ -11,18 +11,18 @@ const store = useDefaultStore()
 const article = store.articles.find(
 	(article) => article.slug === route.params.slug
 )
-const tags: Tag[] = article!.tags.map((tag) => {
+const tags: Tag[] = article?.tags.map((tag) => {
 	return { type: 'tags', value: tag }
-})
-const places: Tag[] = article!.places.map((place) => {
+}) || []
+const places: Tag[] = article?.places.map((place) => {
 	return { type: 'places', value: place }
-})
+}) || []
 const allTags: Tag[] = [...tags, ...places]
 </script>
 
 <template>
-	<BreadCrumb :slug="article!.slug" />
 	<div v-if="article">
+		<BreadCrumb :slug="article?.slug" />
 		<h2>{{ article.title }}</h2>
 		<p>{{ dateToLocaleString(article.published_at) }}</p>
 		<div class="article_illustration">
@@ -36,6 +36,6 @@ const allTags: Tag[] = [...tags, ...places]
 		</div>
 	</div>
 	<div v-else>
-		<h1>Article not found ;_;</h1>
+		<p>Article not found ;_;</p>
 	</div>
 </template>
