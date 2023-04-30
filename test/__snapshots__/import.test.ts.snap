@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`import vue components > normal imports as expected 1`] = `
+{
+  "default": {
+    "__file": "/Users/janoshardi/Workspace/vue-exercise-app/src/App.vue",
+    "__name": "App",
+    "render": [Function],
+    "setup": [Function],
+  },
+}
+`;
