@@ -1,3 +1,10 @@
-# Exercise with Vue3 + TS + Vite + Pinia
+# Exercise with Vue
 
-Simple dashboard-like functions, sorting, filtering
+Simple functions, sorting, filtering and displaying json based articles with:
+
+- Vite
+- Vitest
+- Cypress
+- Vue
+- Vue-Router
+- Pinia
